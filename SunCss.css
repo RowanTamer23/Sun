@@ -1,0 +1,186 @@
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0vw;
+  margin: 0vw;
+  padding: 0vw;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+#bgimg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  position: fixed;
+  z-index: -1;
+  background-attachment: fixed;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1vw;
+  margin-top: 0;
+}
+.title {
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: fit-content;
+}
+#img {
+  margin-top: 1vw;
+  width: 6vw;
+  height: 6vw;
+}
+.h2 {
+  margin-top: 0.5vw;
+  margin-left: 0.8vw;
+  color: rgba(175, 20, 20, 0.79);
+  font-size: 7.5vw;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  -webkit-text-stroke: 1.2px rgb(0, 0, 0);
+}
+#button:hover {
+  background-color: rgb(255, 216, 216);
+  color: rgb(0, 0, 0);
+}
+#ph {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.news {
+  background-color: rgba(198, 198, 198, 0.84);
+  border-radius: 5vw;
+  z-index: 1;
+  margin-top: 1vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.news #who {
+  font-size: 10vw;
+  margin: 2.5vw;
+  align-items: center;
+  justify-content: center;
+  color: rgba(136, 2, 2, 0.79);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+.news #par {
+  font-size: 4vw;
+  margin: 1.5vw;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  font-size: 4vw;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  background-color: rgb(62, 62, 62);
+  opacity: 0.6;
+  columns: 1;
+  border-radius: 5px 15px;
+  border: 2px solid black;
+  resize: none;
+  width: 100%;
+}
+.area {
+  padding: 1vw;
+  font-size: 5vw;
+}
+#button {
+  background-color: rgb(70, 3, 3);
+}
+.game {
+  font-size: 4vw;
+  color: rgb(255, 255, 255, 0.7);
+  background-color: rgb(62, 62, 62, 0.6);
+  border-radius: 5px 15px;
+  border: 2px solid black;
+  padding: 5px;
+}
+.check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(62, 62, 62, 0.6);
+}
+.check:hover input ~ .checkmark {
+  background-color: black;
+}
+.check input:checked ~ .checkmark {
+  background-color: rgb(70, 3, 3, 0.6);
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.check input:checked ~ .checkmark:after {
+  display: block;
+}
+.check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#success {
+  font-size: 4vw;
+  color: rgb(255, 255, 255, 0.7);
+  background-color: rgb(62, 62, 62, 0.6);
+  border-radius: 5px 15px;
+  border: 2px solid black;
+  padding: 5px;
+}
+@media all and (max-width>500px) {
+  .title {
+    display: none;
+  }
+}
